@@ -1,7 +1,14 @@
+/* Regole generali */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+}
+
+body {
+    background-color: #06D001;
 }
 
 ul {
@@ -9,21 +16,60 @@ ul {
     padding-left: 25px;
     line-height: 40px;
 }
+/* Aggiunta prodotti */
+#check_me {
+    margin-right: 10px;
+    vertical-align: middle;
+    font-size: 12px;
+}
 
+#items{
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Regole container */
 #container{
     width: 40%;
     margin: 50px auto;
     border: 1px solid black;
+    background-color: #F3FF90;
     border-radius: 10px;
 }
 
 #container h1 {
     border-bottom: 1px solid black;
     text-align: center;
+    color: #059212;
+    font-size: 2rem;
 }
 
 #container_add {
     border-top: 1px solid black;
     text-align: center;
     padding: 10px 0;
+}
+
+
+label {
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Regole bottone aggiunta */
+
+#add_items{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #059212;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+/* Regole media query */
+@media screen and (max-width:698px) {
+    #container{
+        width: 80%;
+    }
 }

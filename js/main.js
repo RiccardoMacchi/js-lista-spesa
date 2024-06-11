@@ -1,5 +1,4 @@
 // Creazione lista spesa
-
 const listSpesa = ["pane","salame","frutta","biscotti"]
 
 // Recupero ul in pagina html
@@ -9,7 +8,7 @@ console.log(listUl);
 // Creazione ciclo while
 let i = 0
 while (i < listSpesa.length) {
-    listUl.innerHTML += `<li>${listSpesa[i]}</li>`;
+    listUl.innerHTML += `<li><input id="check_me" type="checkbox">${listSpesa[i]}</li>`;
     i++;
 }
 
@@ -25,9 +24,11 @@ btnAdd.addEventListener("click",
         let i = listSpesa.length
         listSpesa.push(singleItem);
         while (i < listSpesa.length) {
-            listUl.innerHTML += `<li>${listSpesa[i]}</li>`;
+            listUl.innerHTML += `<li><input id="check_me" type="checkbox">${listSpesa[i]}</li>`;
             i++;
         }
+        // Ripulita del campo input aggiunta items
+        document.getElementById("items").value = "";
     }
 )
 
