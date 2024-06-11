@@ -21,3 +21,9 @@ ul {
     border-bottom: 1px solid black;
     text-align: center;
 }
+
+#container_add {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+}
